@@ -1,10 +1,31 @@
 {
   "_help": "Edit this file to update the site. status must be one of: Researching, Visit planned, Visited, Applying, Submitted, Accepted, Waitlisted, Declined. rank is a number or null. done lists finished checklist items.",
-  "checklist": ["Application started", "Essay done", "Recommendations requested", "Test / audition registered", "Application submitted", "Fee paid", "Decision received"],
+  "checklist": [
+    "Application started",
+    "Essay done",
+    "Recommendations requested",
+    "Test / audition registered",
+    "Application submitted",
+    "Fee paid",
+    "Decision received"
+  ],
   "keyDates": [
-    { "date": "TBD", "what": "Application opens" },
-    { "date": "TBD", "what": "Audition / portfolio dates" },
-    { "date": "TBD", "what": "Ranked list due" }
+    {
+      "date": "Mon, Nov 23, 2026 · 6:00 PM",
+      "what": "Beacon Admissions Written Response (attend)"
+    },
+    {
+      "date": "TBD",
+      "what": "Application opens"
+    },
+    {
+      "date": "TBD",
+      "what": "Audition / portfolio dates"
+    },
+    {
+      "date": "TBD",
+      "what": "Ranked list due"
+    }
   ],
   "schools": [
     {
@@ -12,32 +33,70 @@
       "status": "Researching",
       "type": "Public · art & design (portfolio screening)",
       "location": "Manhattan · 1075 2nd Ave",
-      "deadline": "TBD", "test": "TBD", "interview": "TBD",
-      "rank": null, "done": [], "pros": "", "cons": "", "notes": "Confirm details on school website"
+      "deadline": "TBD",
+      "test": "TBD",
+      "interview": "TBD",
+      "rank": null,
+      "done": [],
+      "pros": "",
+      "cons": "",
+      "notes": "Confirm details on school website"
     },
     {
       "name": "LaGuardia High School",
       "status": "Researching",
       "type": "Public · music, art & performing arts (audition)",
       "location": "Manhattan · 100 Amsterdam Ave",
-      "deadline": "TBD", "test": "TBD", "interview": "TBD",
-      "rank": null, "done": [], "pros": "", "cons": "", "notes": "Confirm details on school website"
+      "deadline": "TBD",
+      "test": "TBD",
+      "interview": "TBD",
+      "rank": null,
+      "done": [],
+      "pros": "",
+      "cons": "",
+      "notes": "Confirm details on school website"
     },
     {
       "name": "Frank Sinatra School of the Arts",
       "status": "Researching",
       "type": "Public · arts (audition)",
       "location": "Astoria, Queens · 35-12 35th Ave",
-      "deadline": "TBD", "test": "TBD", "interview": "TBD",
-      "rank": null, "done": [], "pros": "", "cons": "", "notes": "Confirm details on school website"
+      "deadline": "TBD",
+      "test": "TBD",
+      "interview": "TBD",
+      "rank": null,
+      "done": [],
+      "pros": "",
+      "cons": "",
+      "notes": "Confirm details on school website"
     },
     {
       "name": "Brooklyn High School of the Arts",
       "status": "Researching",
       "type": "Public · arts (audition)",
       "location": "Brooklyn · 345 Dean St",
-      "deadline": "TBD", "test": "TBD", "interview": "TBD",
-      "rank": null, "done": [], "pros": "", "cons": "", "notes": "Confirm details on school website"
+      "deadline": "TBD",
+      "test": "TBD",
+      "interview": "TBD",
+      "rank": null,
+      "done": [],
+      "pros": "",
+      "cons": "",
+      "notes": "Confirm details on school website"
+    },
+    {
+      "name": "Beacon High School",
+      "status": "Applying",
+      "type": "Public · written response admission",
+      "location": "Manhattan · 227 W 61st St",
+      "deadline": "TBD",
+      "test": "Written Response: Mon Nov 23, 6:00 PM",
+      "interview": "TBD",
+      "rank": null,
+      "done": [],
+      "pros": "",
+      "cons": "",
+      "notes": "Attend the Admissions Written Response on Nov 23 at 6pm. Confirm location and what to bring."
     }
   ]
 }
