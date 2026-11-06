@@ -1,6 +1,6 @@
 {
   "_help": "Edit this file to update the site. status must be one of: Researching, Visit planned, Visited, Applying, Submitted, Accepted, Waitlisted, Declined. rank is a number or null. done lists finished checklist items.",
-  "checklist": ["Visited / open house", "Application started", "Essay done", "Recommendations requested", "Test / audition registered", "Application submitted", "Fee paid", "Decision received"],
+  "checklist": ["Application started", "Essay done", "Recommendations requested", "Test / audition registered", "Application submitted", "Fee paid", "Decision received"],
   "keyDates": [
     { "date": "TBD", "what": "Application opens" },
     { "date": "TBD", "what": "Audition / portfolio dates" },
@@ -12,7 +12,7 @@
       "status": "Researching",
       "type": "Public · art & design (portfolio screening)",
       "location": "Manhattan · 1075 2nd Ave",
-      "tour": "TBD", "deadline": "TBD", "test": "TBD", "interview": "TBD",
+      "deadline": "TBD", "test": "TBD", "interview": "TBD",
       "rank": null, "done": [], "pros": "", "cons": "", "notes": "Confirm details on school website"
     },
     {
@@ -20,7 +20,7 @@
       "status": "Researching",
       "type": "Public · music, art & performing arts (audition)",
       "location": "Manhattan · 100 Amsterdam Ave",
-      "tour": "TBD", "deadline": "TBD", "test": "TBD", "interview": "TBD",
+      "deadline": "TBD", "test": "TBD", "interview": "TBD",
       "rank": null, "done": [], "pros": "", "cons": "", "notes": "Confirm details on school website"
     },
     {
@@ -28,7 +28,7 @@
       "status": "Researching",
       "type": "Public · arts (audition)",
       "location": "Astoria, Queens · 35-12 35th Ave",
-      "tour": "TBD", "deadline": "TBD", "test": "TBD", "interview": "TBD",
+      "deadline": "TBD", "test": "TBD", "interview": "TBD",
       "rank": null, "done": [], "pros": "", "cons": "", "notes": "Confirm details on school website"
     },
     {
@@ -36,7 +36,7 @@
       "status": "Researching",
       "type": "Public · arts (audition)",
       "location": "Brooklyn · 345 Dean St",
-      "tour": "TBD", "deadline": "TBD", "test": "TBD", "interview": "TBD",
+      "deadline": "TBD", "test": "TBD", "interview": "TBD",
       "rank": null, "done": [], "pros": "", "cons": "", "notes": "Confirm details on school website"
     }
   ]

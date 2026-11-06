@@ -41,6 +41,7 @@ h1{margin:0;font-size:1.9rem;letter-spacing:-.01em}
 .type{font-size:.9rem;color:var(--muted);margin-bottom:8px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
 .cell{background:#faf7fd;border-radius:14px;padding:8px 10px}
+.cell:last-child{grid-column:span 2}
 .cell small{display:block;color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.04em}
 .bar{height:10px;background:#f1eaf7;border-radius:99px;overflow:hidden;margin:12px 0 4px}
 .bar i{display:block;height:100%;background:linear-gradient(90deg,#f8b4d0,#c7b3f5);border-radius:99px}
@@ -111,7 +112,6 @@ function render() {
       <span class="badge ${cls(s.status)}">${esc(s.status)}</span>
       <div class="type">${esc(s.type)}</div>
       <div class="grid">
-        <div class="cell"><small>Tour</small>${esc(s.tour)}</div>
         <div class="cell"><small>Deadline</small>${esc(s.deadline)}</div>
         <div class="cell"><small>Test / audition</small>${esc(s.test)}</div>
         <div class="cell"><small>Interview</small>${esc(s.interview)}</div>
