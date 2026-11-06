@@ -114,9 +114,9 @@
     }
   ],
   "portfolio": {
-    "title": "Art portfolio (4 to 8 pieces)",
+    "title": "Art and fashion portfolio",
     "source": "https://www.schools.nyc.gov/hsauditions",
-    "intro": "One portfolio can be used for several schools in the same art discipline. Photograph each piece. Check MySchools for upload rules and the current year's dates.",
+    "intro": "Nina's plan. Official rules say 4 to 8 pieces, so confirm on MySchools whether 9 is allowed. Photograph each piece.",
     "items": [
       {
         "n": 1,
@@ -141,41 +141,48 @@
       },
       {
         "n": 4,
-        "title": "Extra piece (your choice)",
-        "detail": "Any material, 2D or 3D. Pieces 4 to 7 are optional, add 1 to 4.",
-        "required": false,
+        "title": "Fashion piece 1",
+        "detail": "Fashion design piece. Any material, 2D or 3D.",
+        "required": true,
         "done": false
       },
       {
         "n": 5,
-        "title": "Extra piece (your choice)",
-        "detail": "Any material, 2D or 3D.",
-        "required": false,
+        "title": "Fashion piece 2",
+        "detail": "Fashion design piece. Any material, 2D or 3D.",
+        "required": true,
         "done": false
       },
       {
         "n": 6,
-        "title": "Extra piece (your choice)",
-        "detail": "Any material, 2D or 3D.",
-        "required": false,
+        "title": "Fashion piece 3",
+        "detail": "Fashion design piece. Any material, 2D or 3D.",
+        "required": true,
         "done": false
       },
       {
         "n": 7,
-        "title": "Extra piece (your choice)",
-        "detail": "Any material, 2D or 3D.",
-        "required": false,
+        "title": "Fashion piece 4",
+        "detail": "Fashion design piece. Any material, 2D or 3D.",
+        "required": true,
         "done": false
       },
       {
         "n": 8,
-        "title": "Creative drawing: a fantastical sandwich",
-        "detail": "Pencil on paper, with a background, fill the page. Colored pencils allowed. Required for Art and Design, LaGuardia, Frank Sinatra and Fashion Industries. Optional for other programs.",
+        "title": "Additional art piece",
+        "detail": "One more art piece of your choice, any material, 2D or 3D.",
         "required": true,
         "done": false
       },
       {
         "n": 9,
+        "title": "Fashion fantastical sandwich",
+        "detail": "A fantastical sandwich drawing in a fashion style. Pencil on paper, with a background, fill the page. Colored pencils allowed. Required for Art and Design, LaGuardia, Frank Sinatra and Fashion Industries.",
+        "required": true,
+        "done": false
+      },
+      {
+        "n": 10,
         "title": "Student introduction",
         "detail": "Choose 3 of your pieces (must include pieces 1 and 2). Make a video of 3 minutes or less, or write up to 500 words: subject and materials, motivation, influences.",
         "required": true,
