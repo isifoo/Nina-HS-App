@@ -8,7 +8,10 @@ Status key: 🔍 Researching · 📅 Visit planned · ✅ Visited · 📝 Applyi
 
 | # | School | Status | Type / Program | Location | Open house / tour | Deadline | Test / Audition | Interview | Our rank | Notes |
 |---|--------|--------|----------------|----------|-------------------|----------|-----------------|-----------|----------|-------|
-| 1 | _Example High School_ | 🔍 | Public / general | Brooklyn | Nov 15, 10am | Dec 1 | None | No | - | Add notes here |
+| 1 | [High School of Art and Design](schools/art-and-design.md) | 🔍 | Public / art & design (portfolio screening) | Manhattan (1075 2nd Ave) | TBD | TBD | TBD | TBD | - | Confirm details on school website |
+| 2 | [LaGuardia High School](schools/laguardia.md) | 🔍 | Public / music, art & performing arts (audition) | Manhattan (100 Amsterdam Ave) | TBD | TBD | TBD | TBD | - | Confirm details on school website |
+| 3 | [Frank Sinatra School of the Arts](schools/frank-sinatra.md) | 🔍 | Public / arts (audition) | Astoria, Queens (35-12 35th Ave) | TBD | TBD | TBD | TBD | - | Confirm details on school website |
+| 4 | [Brooklyn High School of the Arts](schools/brooklyn-hs-arts.md) | 🔍 | Public / arts (audition) | Brooklyn (345 Dean St) | TBD | TBD | TBD | TBD | - | Confirm details on school website |
 |   |   |   |   |   |   |   |   |   |   |   |
 
 > To add a school: copy the last row, paste it below, and fill it in. Detailed per-school checklists live in [`schools/`](schools/) (copy `schools/_TEMPLATE.md`).
