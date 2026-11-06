@@ -54,6 +54,11 @@ h3{margin:28px 0 8px}
 .dates{background:var(--card);border-radius:20px;box-shadow:var(--shadow);padding:6px 16px}
 .dates div{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed #eadff5}
 .dates div:last-child{border:0}
+.pf p{margin:8px 0;color:var(--muted);font-size:.88rem}
+.pf .it{padding:10px 0;border-bottom:1px dashed #eadff5}
+.pf .it:last-child{border:0}
+.pf .it small{display:block;color:var(--muted)}
+.req{background:var(--peach);border-radius:99px;padding:1px 8px;font-size:.7rem;margin-left:6px}
 .edit{display:block;text-align:center;margin:30px auto 0;padding:14px 20px;border-radius:18px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;max-width:340px;box-shadow:var(--shadow)}
 .hint{text-align:center;color:var(--muted);font-size:.8rem;margin-top:10px}
 </style>
@@ -73,6 +78,9 @@ h3{margin:28px 0 8px}
 
   <div class="filters" id="filters"></div>
   <div id="list"></div>
+
+  <h3 id="pf-title">🖼️ Art portfolio</h3>
+  <div class="dates" id="portfolio"></div>
 
   <h3>📅 Key dates</h3>
   <div class="dates" id="dates"></div>
@@ -125,6 +133,15 @@ function render() {
     </article>`;
   }).join("") || "<p class='sub' style='text-align:center'>No schools here yet.</p>";
 
+  const P = data.portfolio;
+  if (P) {
+    const dn = P.items.filter(i => i.done).length;
+    document.getElementById("pf-title").textContent = "🖼️ " + P.title;
+    document.getElementById("portfolio").className = "dates pf";
+    document.getElementById("portfolio").innerHTML = `<p>${esc(P.intro)} <a href="${esc(P.source)}">Official page</a></p>
+      <div class="bar"><i style="width:${Math.round(dn/P.items.length*100)}%"></i></div><small style="color:var(--muted)">${dn} of ${P.items.length} done</small>` +
+      P.items.map(i => `<div class="it">${i.done ? "✅" : "⬜"} <b>${esc(i.n)}. ${esc(i.title)}</b>${i.required ? '<span class="req">required</span>' : ""}<small>${esc(i.detail)}</small></div>`).join("");
+  }
   document.getElementById("dates").innerHTML = data.keyDates.map(k => `<div><span>${esc(k.what)}</span><b>${esc(k.date)}</b></div>`).join("");
 }
 </script>

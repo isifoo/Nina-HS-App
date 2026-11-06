@@ -97,6 +97,90 @@
       "pros": "",
       "cons": "",
       "notes": "Attend the Admissions Written Response on Nov 23 at 6pm. Confirm location and what to bring."
+    },
+    {
+      "name": "High School of Fashion Industries",
+      "status": "Researching",
+      "type": "Public · fashion (art portfolio audition)",
+      "location": "Manhattan · 225 W 24th St",
+      "deadline": "TBD",
+      "test": "Art portfolio, same as above (includes sandwich drawing)",
+      "interview": "TBD",
+      "rank": null,
+      "done": [],
+      "pros": "",
+      "cons": "",
+      "notes": "Confirm program, address and dates on MySchools."
     }
-  ]
+  ],
+  "portfolio": {
+    "title": "Art portfolio (4 to 8 pieces)",
+    "source": "https://www.schools.nyc.gov/hsauditions",
+    "intro": "One portfolio can be used for several schools in the same art discipline. Photograph each piece. Check MySchools for upload rules and the current year's dates.",
+    "items": [
+      {
+        "n": 1,
+        "title": "Self-portrait",
+        "detail": "Graphite pencil on paper, drawn from observation (look in a mirror).",
+        "required": true,
+        "done": false
+      },
+      {
+        "n": 2,
+        "title": "Still life",
+        "detail": "At least 3 items, graphite pencil on paper, from observation.",
+        "required": true,
+        "done": false
+      },
+      {
+        "n": 3,
+        "title": "Figure drawing",
+        "detail": "Graphite pencil on paper. A friend or family member can pose. Draw the whole figure, fill the page, add background.",
+        "required": true,
+        "done": false
+      },
+      {
+        "n": 4,
+        "title": "Extra piece (your choice)",
+        "detail": "Any material, 2D or 3D. Pieces 4 to 7 are optional, add 1 to 4.",
+        "required": false,
+        "done": false
+      },
+      {
+        "n": 5,
+        "title": "Extra piece (your choice)",
+        "detail": "Any material, 2D or 3D.",
+        "required": false,
+        "done": false
+      },
+      {
+        "n": 6,
+        "title": "Extra piece (your choice)",
+        "detail": "Any material, 2D or 3D.",
+        "required": false,
+        "done": false
+      },
+      {
+        "n": 7,
+        "title": "Extra piece (your choice)",
+        "detail": "Any material, 2D or 3D.",
+        "required": false,
+        "done": false
+      },
+      {
+        "n": 8,
+        "title": "Creative drawing: a fantastical sandwich",
+        "detail": "Pencil on paper, with a background, fill the page. Colored pencils allowed. Required for Art and Design, LaGuardia, Frank Sinatra and Fashion Industries. Optional for other programs.",
+        "required": true,
+        "done": false
+      },
+      {
+        "n": 9,
+        "title": "Student introduction",
+        "detail": "Choose 3 of your pieces (must include pieces 1 and 2). Make a video of 3 minutes or less, or write up to 500 words: subject and materials, motivation, influences.",
+        "required": true,
+        "done": false
+      }
+    ]
+  }
 }
