@@ -1,5 +1,5 @@
 # Nina's High School Plan
-n**Site:** https://isifoo.github.io/Nina-HS-App/
+**Site:** https://isifoo.github.io/Nina-HS-App/
 
 Open the site for the pretty version. To update anything, edit [`schools.json`](schools.json) (tap the pencil, change the text, tap Commit changes).
 
