@@ -11,6 +11,10 @@
   ],
   "keyDates": [
     {
+      "date": "Wed, Nov 18, 2026",
+      "what": "SHSAT exam"
+    },
+    {
       "date": "Tue, Nov 17, 2026 · 4:00 to 6:00 PM",
       "what": "Frank Sinatra Self-Guided Open House"
     },
@@ -193,5 +197,177 @@
         "done": false
       }
     ]
+  },
+  "schedule": {
+    "note": "Suggested times except school, tutoring, drama and bedtime. Edit anything in schools.json. SHSAT and Beacon items drop off automatically after their dates.",
+    "countdowns": [
+      {
+        "label": "SHSAT exam",
+        "date": "2026-11-18"
+      },
+      {
+        "label": "Beacon written response",
+        "date": "2026-11-23"
+      }
+    ],
+    "sleep": "10:00 PM",
+    "days": {
+      "Mon": [
+        {
+          "time": "2:45 PM",
+          "title": "School ends",
+          "tag": "fixed"
+        },
+        {
+          "time": "3:30 PM",
+          "title": "SHSAT tutoring",
+          "tag": "shsat"
+        },
+        {
+          "time": "7:00 PM",
+          "title": "Beacon essay practice (30 min)",
+          "tag": "beacon",
+          "until": "2026-11-23"
+        },
+        {
+          "time": "7:45 PM",
+          "title": "LaGuardia training (30 min)",
+          "tag": "laguardia"
+        }
+      ],
+      "Tue": [
+        {
+          "time": "2:45 PM",
+          "title": "School ends",
+          "tag": "fixed"
+        },
+        {
+          "time": "4:00 PM",
+          "title": "SHSAT prep (1 hr)",
+          "tag": "shsat",
+          "until": "2026-11-18"
+        },
+        {
+          "time": "6:30 PM",
+          "title": "LaGuardia training (45 min)",
+          "tag": "laguardia"
+        },
+        {
+          "time": "7:30 PM",
+          "title": "Beacon essay practice (30 min)",
+          "tag": "beacon",
+          "until": "2026-11-23"
+        }
+      ],
+      "Wed": [
+        {
+          "time": "2:45 PM",
+          "title": "School ends",
+          "tag": "fixed"
+        },
+        {
+          "time": "2:45 PM",
+          "title": "Drama, until 4:00 PM",
+          "tag": "drama"
+        },
+        {
+          "time": "5:00 PM",
+          "title": "SHSAT prep (1 hr)",
+          "tag": "shsat",
+          "until": "2026-11-18"
+        },
+        {
+          "time": "7:00 PM",
+          "title": "Beacon essay practice (30 min)",
+          "tag": "beacon",
+          "until": "2026-11-23"
+        }
+      ],
+      "Thu": [
+        {
+          "time": "2:45 PM",
+          "title": "School ends",
+          "tag": "fixed"
+        },
+        {
+          "time": "2:45 PM",
+          "title": "Drama, until 4:00 PM",
+          "tag": "drama"
+        },
+        {
+          "time": "5:00 PM",
+          "title": "SHSAT prep (1 hr)",
+          "tag": "shsat",
+          "until": "2026-11-18"
+        },
+        {
+          "time": "7:00 PM",
+          "title": "LaGuardia training (45 min)",
+          "tag": "laguardia"
+        }
+      ],
+      "Fri": [
+        {
+          "time": "2:45 PM",
+          "title": "School ends",
+          "tag": "fixed"
+        },
+        {
+          "time": "4:00 PM",
+          "title": "SHSAT prep, review (45 min)",
+          "tag": "shsat",
+          "until": "2026-11-18"
+        },
+        {
+          "time": "6:00 PM",
+          "title": "Beacon essay practice (30 min)",
+          "tag": "beacon",
+          "until": "2026-11-23"
+        }
+      ],
+      "Sat": [
+        {
+          "time": "9:00 AM",
+          "title": "SHSAT tutoring",
+          "tag": "shsat"
+        },
+        {
+          "time": "1:00 PM",
+          "title": "SHSAT prep (1 hr)",
+          "tag": "shsat",
+          "until": "2026-11-18"
+        },
+        {
+          "time": "3:00 PM",
+          "title": "LaGuardia training (1 hr)",
+          "tag": "laguardia"
+        },
+        {
+          "time": "5:00 PM",
+          "title": "Beacon essay practice (30 min)",
+          "tag": "beacon",
+          "until": "2026-11-23"
+        }
+      ],
+      "Sun": [
+        {
+          "time": "10:00 AM",
+          "title": "SHSAT prep (1 hr)",
+          "tag": "shsat",
+          "until": "2026-11-18"
+        },
+        {
+          "time": "1:00 PM",
+          "title": "LaGuardia training (1 hr)",
+          "tag": "laguardia"
+        },
+        {
+          "time": "3:00 PM",
+          "title": "Beacon essay practice (45 min)",
+          "tag": "beacon",
+          "until": "2026-11-23"
+        }
+      ]
+    }
   }
 }

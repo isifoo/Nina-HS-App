@@ -59,6 +59,18 @@ h3{margin:28px 0 8px}
 .pf .it:last-child{border:0}
 .pf .it small{display:block;color:var(--muted)}
 .req{background:var(--peach);border-radius:99px;padding:1px 8px;font-size:.7rem;margin-left:6px}
+.sched{background:var(--card);border-radius:24px;box-shadow:var(--shadow);padding:16px;margin:14px 0 6px;border-top:8px solid var(--lav)}
+.sched h2{margin:0 0 4px;font-size:1.2rem}
+.cd{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.cd span{background:var(--lemon);border-radius:99px;padding:4px 12px;font-size:.82rem;font-weight:700}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:6px 0 10px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{border:0;border-radius:14px;padding:8px 12px;background:#f4effa;color:var(--ink);font:inherit;font-size:.85rem;cursor:pointer;min-width:48px}
+.tab.on{background:var(--ink);color:#fff}.tab.today{outline:2px solid var(--pink)}
+.blk{display:flex;gap:10px;align-items:center;border-radius:16px;padding:10px 12px;margin:6px 0}
+.blk time{font-weight:700;font-size:.82rem;min-width:70px}
+.t-shsat{background:var(--sky)}.t-beacon{background:var(--pink)}.t-laguardia{background:var(--lav)}.t-drama{background:var(--peach)}.t-fixed{background:var(--mint)}.t-sleep{background:var(--ink);color:#fff}
+.snote{color:var(--muted);font-size:.78rem;margin:8px 0 0}
 .edit{display:block;text-align:center;margin:30px auto 0;padding:14px 20px;border-radius:18px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;max-width:340px;box-shadow:var(--shadow)}
 .hint{text-align:center;color:var(--muted);font-size:.8rem;margin-top:10px}
 </style>
@@ -69,6 +81,8 @@ h3{margin:28px 0 8px}
     <h1>🎨 Nina's High School Plan</h1>
     <p class="sub">Schools, dates and to-dos in one place</p>
   </header>
+
+  <section class="sched" id="sched"></section>
 
   <div class="stats">
     <div class="stat"><b id="n-total">0</b><span>Schools</span></div>
@@ -99,7 +113,29 @@ let data, filter = "All";
 fetch("schools.json?" + Date.now()).then(r => r.json()).then(d => { data = d; render(); })
   .catch(() => document.getElementById("list").textContent = "Could not load schools.json");
 
+
+const DAYS = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"], ORDER = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+const FULL = {Mon:"Monday",Tue:"Tuesday",Wed:"Wednesday",Thu:"Thursday",Fri:"Friday",Sat:"Saturday",Sun:"Sunday"};
+const todayName = DAYS[new Date().getDay()]; let selDay = todayName;
+function dateFor(day){ const t = new Date(); t.setHours(0,0,0,0); t.setDate(t.getDate() + (DAYS.indexOf(day) - t.getDay() + 7) % 7); return t; }
+function renderSchedule(){
+  const S = data.schedule, el = document.getElementById("sched"); if (!S) { el.style.display = "none"; return; }
+  const now = new Date(); now.setHours(0,0,0,0);
+  const cds = (S.countdowns||[]).map(c => ({l:c.label, n:Math.round((new Date(c.date+"T00:00:00") - now)/864e5)})).filter(c => c.n >= 0)
+    .map(c => `<span>${esc(c.l)}: ${c.n === 0 ? "today" : c.n + (c.n===1?" day":" days")}</span>`).join("");
+  const date = dateFor(selDay);
+  const items = (S.days[selDay]||[]).filter(b => !b.until || new Date(b.until+"T23:59:59") >= date);
+  el.innerHTML = `<h2>🗓️ Nina's daily schedule</h2><div class="cd">${cds}</div>
+    <div class="tabs">${ORDER.map(d => `<button class="tab ${d===selDay?"on":""} ${d===todayName?"today":""}" data-d="${d}">${d}</button>`).join("")}</div>
+    <div><b>${FULL[selDay]}${selDay===todayName?" (today)":""}</b></div>
+    ${items.map(b => `<div class="blk t-${esc(b.tag)}"><time>${esc(b.time)}</time><span>${esc(b.title)}</span></div>`).join("")}
+    <div class="blk t-sleep"><time>${esc(S.sleep)}</time><span>😴 Bedtime</span></div>
+    <p class="snote">${esc(S.note)}</p>`;
+  el.querySelectorAll(".tab").forEach(b => b.onclick = () => { selDay = b.dataset.d; renderSchedule(); });
+}
+
 function render() {
+  renderSchedule();
   const S = data.schools;
   document.getElementById("n-total").textContent = S.length;
   document.getElementById("n-sub").textContent = S.filter(s => ["Submitted","Accepted","Waitlisted"].includes(s.status)).length;
